@@ -1,0 +1,201 @@
+*{
+    padding: 0; 
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: url(./src/sinalizador.jpeg) no-repeat ;
+    background-size:100% ;
+    
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin: 0 auto;
+    
+}
+
+.border {
+    height: 360px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover{
+    border: 1px solid #ffffff;
+}
+
+
+
+.card{
+    height: 380px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.card0{
+    background: url(./src/neymar.png) center center no-repeat;
+    background-size: 300px;
+}
+
+.card0:hover{
+    background: url(./src/neymar.png) top center no-repeat;
+    background-size: 370px;
+}
+
+.card0:hover h2{
+    opacity: 1;
+}
+
+.card0:hover .g{
+    opacity: 1;
+}
+
+.card1{
+    background: url(./src/cr7.png) center center no-repeat;
+    background-size: 300px;
+}
+
+.card1:hover{
+    background: url(./src/cr7.png) top center no-repeat;
+    background-size: 340px;
+}
+
+.card1:hover h2{
+    opacity: 1;
+}
+
+.card1:hover .g{
+    opacity: 1;
+}
+
+.card2{
+    background: url(./src/messi.png) center center no-repeat;
+    background-size: 300px;
+}
+
+.card2:hover{
+    background: url(./src/messi.png) top center no-repeat;
+    background-size: 370px;
+}
+
+.card2:hover h2{
+    opacity: 1;
+}
+
+.card2:hover .g{
+    opacity: 1;
+}
+
+.card3{
+    background: url(./src/Ronaldo.jpg) center center no-repeat;
+    background-size: 350px;
+}
+
+.card3:hover{
+    background: url(./src/Ronaldo.jpg) top center no-repeat;
+    background-size: 420px;
+}
+
+.card3:hover h2{
+    opacity: 1;
+}
+
+.card3:hover .g{
+    opacity: 1;
+}
+
+
+.card4{
+    background: url(./src/ibra.jpeg) center center no-repeat;
+    background-size: 580px;
+}
+
+.card4:hover{
+    background: url(./src/ibra.jpeg) top center no-repeat;
+    background-size: 900px;
+}
+
+.card4:hover h2{
+    opacity: 1;
+}
+
+.card4:hover .g{
+    opacity: 1;
+}
+
+.card5{
+    background: url(./src/ronaldinho.jpg) center center no-repeat;
+    background-size: 700px;
+}
+
+.card5:hover{
+    background: url(./src/ronaldinho.jpg) top center no-repeat;
+    background-size: 1000px;
+}
+
+.card5:hover h2{
+    opacity: 1;
+}
+
+.card5:hover .g{
+    opacity: 1;
+}
+
+h2 {
+    color: #ffffff;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    text-transform: uppercase;
+
+}
+
+.g{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.texto{
+    position:absolute;
+    margin-left: 10px;
+    color: #f8f8f8;
+    height: 130px;
+    top: 226px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+@media screen  and (max-width:900px){
+    body{
+        background:url(./src/estadio.jpg);
+        background-size: 100%;
+    }
+    .card, .card0, .card1, .card2, .card3, .card4, .card5{
+
+    height: 100%;
+    }
+    
+}
